@@ -1,0 +1,20 @@
+services:
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'testtask'
+    networks:
+      - db
+    ports:
+        - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+networks:
+  db:
+    driver: bridge
+volumes:
+  db_data:
