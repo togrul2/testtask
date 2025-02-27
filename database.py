@@ -10,7 +10,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 
 # Update the connection string with your MySQL credentials and database name
-# SQLALCHEMY_DATABASE_URL = "mysql+pymysql://username:password@localhost/dbname"
 SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
