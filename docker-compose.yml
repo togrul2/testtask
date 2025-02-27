@@ -1,3 +1,6 @@
+# This file is used to create a docker container with mysql database
+# This can be used to create a mysql database for the application
+
 services:
 
   db:
