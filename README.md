@@ -13,7 +13,7 @@ This project is a sample FastAPI webapp built for test task.
     - **Get Posts:** Retrieve all posts for the authenticated user with in-memory caching (5 minutes).
     - **Delete Post:** Remove a post by its ID if it belongs to the user.
 
-- **Environment Configuration:**  
+- **Environment Configuration:**
   Uses environment variables for sensitive settings:
     - `JWT_SECRET_KEY`: The secret key for encoding JWT tokens.
     - `DATABASE_URL`: The connection string for the MySQL database.
@@ -28,14 +28,14 @@ This project is a sample FastAPI webapp built for test task.
 1. **Set up the app:**
 
    ```bash
-   # Clone the repository.
-   git clone https://github.com/togrul2/testtask.git
-   cd testtask
-   
+    # Clone the repository.
+    git clone https://github.com/togrul2/testtask.git
+    cd testtask
+
     # Create a virtual environment.
     python3 -m venv venv
     source venv/bin/activate
-    
+
     # Install the requirements.
     pip install -r requirements.txt
 
@@ -55,4 +55,4 @@ or
   ```bash
       uvicorn main:app --reload --host 127.0.0.1 --port 8000
   ```
-   
+
